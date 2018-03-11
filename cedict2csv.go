@@ -10,8 +10,8 @@ import (
 )
 
 func main () {
-  cedictFileName := flag.String("cedict", nil, "Cedict file to parse")
-  outputFileName := flag.String("output", nil, "Output csv")
+  cedictFileName := flag.String("cedict", "", "Cedict file to parse")
+  outputFileName := flag.String("output", "", "Output csv")
   flag.Parse()
 
   if (flag.NFlag() != 2) {
